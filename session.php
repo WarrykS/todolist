@@ -1,11 +1,11 @@
 <?php
-
+// définir le nom du serveur, le username, le mdp et le nom de la bdd pour s'y connecter
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'toor');
 define('DB_NAME', 'tache');
  
-// Connexion à la base de données MySQL 
+// Connexion à la base de données MySQL
 $conn = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
  
 // Vérifier la connexion

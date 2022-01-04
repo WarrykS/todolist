@@ -1,7 +1,10 @@
+/* css du body, background et police du site */
 body {
     font-family: Arial, Helvetica, sans-serif;
       background: #005b7d;
     }
+
+    /* css des div d'inscription et de connexion */
     .box {
       border-radius: 20px;
       font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +14,7 @@ body {
       margin: 60px auto;
       width: 399px;
     }
+
     h1.box-logo a {
       text-decoration:none;
     }
@@ -176,19 +180,14 @@ body {
           border: 4px solid #e3051b;
         }
 
-  
-        /* Include the padding and border in an element's total width and height */
-* {
-    box-sizing: border-box;
-  }
-  
-  /* Remove margins and padding from the list */
+
+  /* permet d'enlever les point des elements de la liste (à puce) */
   ul {
     margin: 0;
     padding: 0;
   }
   
-  /* Style the list items */
+  /* css des elements de la todolist  */
   ul li {
     cursor: pointer;
     position: relative;
@@ -200,67 +199,44 @@ body {
     border: 4px solid #8caaba;
   
   }
+
   
-  /* Set all odd list items to a different color (zebra-stripes) */
-  ul li:nth-child(odd) {
-    background: #06a3dc;
-  }
-  
-  /* Darker background-color on hover */
+  /* change la couleur quand le curseur est placé sur un element de la todolist */
   ul li:hover {
     background: #e3051b;
   }
-  
-  /* When clicked on, add a background color and strike out text */
-  ul li.checked {
-    background: #888;
-    color: #fff;
-    text-decoration: line-through;
-  }
-  
-  /* Add a "checked" mark when clicked on */
-  ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  }
-  
-  /* Style the close button */
+
+
+  /* css du bouton fermer */
   .close {
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
-    padding: 12px 16px 12px 16px;
+    padding: 12px 100% 12px 16px;
   }
-  
+
+
+  /* css du bouton fermer quand on passe le curseur dessus */
   .close:hover {
     background-color: #e3051b;
-    color: white;
+    color: #ffffff;
   }
-  
-  /* Style the header */
+
   .header {
     background-color: #e3051b;
     padding: 45px 600px;
     color: white;
     text-align: center;
   }
-  
+
   /* Clear floats after the header */
   .header:after {
     content: "";
     display: table;
     clear: both;
   }
-  
-  /* Style the input */
+
+  /* css du contour des input (ici l'endroit de saisie) */
   input {
     margin: 0;
     border: none;
@@ -272,7 +248,7 @@ body {
     border: 4px solid #005b7d;
   }
   
-  /* Style the "Add" button */
+  /* css du bouton Ajouter */
   .addBtn {
     padding: 10px;
     width: 25%;
@@ -286,7 +262,8 @@ body {
     border-radius: 10px;
     border: 4px solid #005b7d;
   }
-  
+
+  /* css du bouton Ajouter quand on passe le curseur dessus */
   .addBtn:hover {
     background-color: #bbb;
   }

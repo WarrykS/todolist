@@ -6,6 +6,7 @@
 
 <body>
 <?php
+// Recupere les données de session.php
 require('session.php');
 session_start();
 if (isset($_POST['username'])){
